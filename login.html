@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | StutterCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>StutterCare</h1>
+                <span>AI Speech Therapy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="login.html" class="login-btn active">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-container">
+        <section class="login-form-container">
+            <div class="login-tabs">
+                <button class="tab-btn active" data-tab="patient">Patient Login</button>
+                <button class="tab-btn" data-tab="therapist">Therapist Login</button>
+            </div>
+
+            <div class="tab-content active" id="patient-tab">
+                <h2>Patient Login</h2>
+                <form id="patient-login-form">
+                    <div class="form-group">
+                        <label for="patient-email">Email</label>
+                        <input type="email" id="patient-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="patient-password">Password</label>
+                        <input type="password" id="patient-password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                    <div class="form-footer">
+                        <a href="#forgot-password">Forgot Password?</a>
+                        <span>Don't have an account? <a href="register.html">Register</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="tab-content" id="therapist-tab">
+                <h2>Therapist Login</h2>
+                <form id="therapist-login-form">
+                    <div class="form-group">
+                        <label for="therapist-email">Email</label>
+                        <input type="email" id="therapist-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="therapist-password">Password</label>
+                        <input type="password" id="therapist-password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                    <div class="form-footer">
+                        <a href="#forgot-password">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="login-image">
+            <img src="helloi.jpeg" alt="Happy person speaking">
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

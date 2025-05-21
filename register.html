@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | StutterCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>StutterCare</h1>
+                <span>AI Speech Therapy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="register-container">
+        <div class="register-decoration decoration-1"></div>
+        <div class="register-decoration decoration-2"></div>
+        
+        <section class="register-form-container">
+            <div class="register-header">
+                <h2>Create Your Account</h2>
+                <p>Join StutterCare to start your speech therapy journey</p>
+            </div>
+
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required placeholder="••••••••">
+                    <small>Minimum 8 characters with at least one number</small>
+                    <div class="password-strength">
+                        <div class="strength-bar" id="strength-bar"></div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required placeholder="••••••••">
+                </div>
+                
+                <div class="form-group">
+                    <label>Account Type</label>
+                    <div class="user-type-selector">
+                        <div class="user-type-option">
+                            <input type="radio" id="patient-type" name="user-type" value="patient" checked>
+                            <label for="patient-type">
+                                <i class="fas fa-user"></i>
+                                <span>Patient</span>
+                            </label>
+                        </div>
+                        <div class="user-type-option">
+                            <input type="radio" id="therapist-type" name="user-type" value="therapist">
+                            <label for="therapist-type">
+                                <i class="fas fa-user-md"></i>
+                                <span>Therapist</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="register-submit-btn">Create Account</button>
+                
+                <div class="register-footer">
+                    <span>Already have an account? <a href="login.html">Sign in here</a></span>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>StutterCare</h3>
+                <p>AI-powered speech therapy for everyone, anywhere.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="practice.html">Practice Tools</a></li>
+                    <li><a href="chat.html">AI Chat</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> support@stuttercare.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 StutterCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

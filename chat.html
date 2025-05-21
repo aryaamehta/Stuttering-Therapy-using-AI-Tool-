@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Therapy Chat | StutterCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>StutterCare</h1>
+                <span>AI Speech Therapy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="chat.html" class="active">Chat</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="chat-main-container">
+        <section class="chat-container">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <i class="fas fa-robot chat-icon"></i>
+                    <h2>AI Therapy Assistant</h2>
+                </div>
+                <div class="chat-controls">
+                    <button id="clear-chat" class="btn-icon" title="Clear conversation">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                    <button id="voice-toggle" class="btn-icon" title="Toggle voice input">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <div class="message ai-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-sender">StutterCare AI</div>
+                        <div class="message-text">
+                            <p>Hello! I'm your StutterCare AI assistant. How can I help you today? Here are some things you can ask me about:</p>
+                            <ul>
+                                <li>Daily speech exercises</li>
+                                <li>Techniques to reduce anxiety</li>
+                                <li>Practice conversations</li>
+                                <li>Progress tracking</li>
+                                <li>General speech therapy advice</li>
+                            </ul>
+                        </div>
+                        <div class="message-time">Just now</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="suggestion-buttons">
+                    <button class="suggestion-btn">Exercises for today</button>
+                    <button class="suggestion-btn">Reduce speech anxiety</button>
+                    <button class="suggestion-btn">Practice conversation</button>
+                    <button class="suggestion-btn">My progress</button>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+                    <button id="send-btn" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="typing-indicator" id="typing-indicator">
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                    <div class="typing-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="chat-sidebar">
+            <div class="sidebar-section">
+                <h3><i class="fas fa-chart-line"></i> Your Progress</h3>
+                <div class="progress-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Fluency Score</div>
+                        <div class="metric-value">78/100</div>
+                        <div class="metric-progress">
+                            <div class="progress-bar" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Weekly Practice</div>
+                        <div class="metric-value">3/5 sessions</div>
+                        <div class="metric-progress">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Stutter Reduction</div>
+                        <div class="metric-value">22%</div>
+                        <div class="metric-progress">
+                            <div class="progress-bar" style="width: 22%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3><i class="fas fa-lightbulb"></i> Quick Tips</h3>
+                <div class="tips">
+                    <div class="tip">
+                        <i class="fas fa-comment"></i>
+                        <p>Practice slow, deliberate speech for 10 minutes daily</p>
+                    </div>
+                    <div class="tip">
+                        <i class="fas fa-bell"></i>
+                        <p>Reminder: You have a therapy session tomorrow at 2 PM</p>
+                    </div>
+                    <div class="tip">
+                        <i class="fas fa-book"></i>
+                        <p>Try the "Prolonged Speech" exercise in Practice section</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <!-- Same footer as other pages -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

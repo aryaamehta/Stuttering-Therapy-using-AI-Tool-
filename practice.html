@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Tools | StutterCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>StutterCare</h1>
+                <span>AI Speech Therapy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="practice.html" class="active">Practice</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="practice-hero">
+            <h1>Speech Practice Tools</h1>
+            <p>Improve your fluency with our AI-powered practice exercises</p>
+        </section>
+
+        <section class="practice-tools">
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h3>Speech Recording</h3>
+                <p>Record your speech and get instant feedback on fluency and pronunciation.</p>
+                <button class="btn-primary start-recording">Start Recording</button>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3>Reading Exercises</h3>
+                <p>Practice reading passages with varying difficulty levels.</p>
+                <button class="btn-primary start-reading">Start Reading</button>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Conversation Practice</h3>
+                <p>Engage in simulated conversations with our AI assistant.</p>
+                <button class="btn-primary start-conversation">Start Conversation</button>
+            </div>
+        </section>
+
+        <section class="recording-section" id="recording-section" style="display: none;">
+            <h2>Speech Recording</h2>
+            <div class="recording-controls">
+                <button id="record-btn" class="btn-primary">
+                    <i class="fas fa-microphone"></i> Start Recording
+                </button>
+                <button id="stop-btn" class="btn-secondary" disabled>
+                    <i class="fas fa-stop"></i> Stop
+                </button>
+            </div>
+            <div class="recording-visualizer">
+                <canvas id="visualizer" width="400" height="100"></canvas>
+            </div>
+            <div class="recording-result" id="recording-result">
+                <h3>Analysis Results</h3>
+                <div class="metrics">
+                    <div class="metric">
+                        <span class="metric-label">Fluency Score</span>
+                        <span class="metric-value" id="fluency-score">--</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Words per Minute</span>
+                        <span class="metric-value" id="wpm">--</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Stutter Count</span>
+                        <span class="metric-value" id="stutter-count">--</span>
+                    </div>
+                </div>
+                <div class="feedback" id="feedback">
+                    <h4>Feedback</h4>
+                    <p>Record your speech to receive personalized feedback.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="practice.js"></script>
+</body>
+</html>
